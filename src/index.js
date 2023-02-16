@@ -26,17 +26,30 @@ fetch(apiUrl)
     const cutieImage = document.getElementById('image')
     cutieImage.src = cuties.image
     const voteCount = document.getElementById('vote-count')
-    voteCount.innerHTML = cuties.votes 
+    voteCount.innerHTML = (" ")
     }
-    function votes(voteForm){
+    
     voteForm.addEventListener('submit', (event) => {
-        event.preventDefault()
-        addVotes(event.target)
+         event.preventDefault();
+         addVotes(event) 
     })
-}
-//     function addVotes(voteForm){
+    function addVotes(event){
+        const voteCount = document.getElementById('vote-count')
+        const newVotes = event.target.value
+        voteCount.innerHTML= parseInt(newVotes);
+    }
+    
+          
+     
+   
+        
 
-// }
+       
+    
+    
+    
+
+    
     
 
     
