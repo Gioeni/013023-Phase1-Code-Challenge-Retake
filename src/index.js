@@ -35,7 +35,7 @@ fetch(apiUrl)
     })
     function addVotes(event){
         const voteCount = document.getElementById('vote-count')
-        const newVotes = event.target.value
+        const newVotes = event.target.votes.value
         voteCount.innerHTML= parseInt(newVotes);
     }
     
